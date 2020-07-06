@@ -1,14 +1,14 @@
-//Este programa será una versión de Siri pero más simplificada y con comandos de números
+//Este programa serÃ¡ una versiÃ³n de Siri pero mÃ¡s simplificada y con comandos de nÃºmeros
 //Se estima que se pueda llegar a tardar 4 meses de trabajo sin contar cuando no se abra
 
 //10/4/2020 Inicia. Nombre cambiado a VISOCU
-//13/4/2020 Solucionado los problemas de las condiciones cambiandolo todo a una variable, también he completado primariamente la calculadora, pero tengo que poner más orden en el código. Es por ahora sin duda el programa más largo que he hecho. También he tenido que cambiar al principio las variables y ponerlo todo a h y he añadido que pasaria si alguien pusiera un numero mayor al que se pide. Por la tarde he añadido la opcion de empezar el programa despues de ver la ayuda. Aun falta mucho programa, todavia hay que añadir la opcion de continuar o salir despues de elegir una accion. Por ahora el total de lineas de codigo es de 206
-//20/4/2020 Añadido el borrado de texto cada vez que sea un número erroneo al iniciar sistema
-//11/5/2020 Me da miedo seguir, ya que no se como volver y no se como terminarlo, lo que estoy haciendo aquí, es magnífico, pero a la vez aterrador. Simplemente he añadido un texto que diga, al abrir la calculadora: volver a inicio o cerrar sesion, pero no lo he programado.
-//22/6/2020 Cronometro añadido al pulsar el 6, ahora el 7 es para cerrar sesion
-//23/6/2020 Añadidas la opcione de cronometro en texto al pulsar la ayuda
-//28/6/2020 Script del planning completado, lo malo, es que no pueden haber espacios, veré como lo soluciono
-//28/6/2020 He añadido el script del planning al programa, pero solo despues de la ayuda, por ahora, HAY QUE AÑADIR QUE SI SE PULSA EL 2 AL ABRIR LAS APPS SE SALGA DEL SISTEMA
+//13/4/2020 Solucionado los problemas de las condiciones cambiandolo todo a una variable, tambiÃ©n he completado primariamente la calculadora, pero tengo que poner mÃ¡s orden en el cÃ³digo. Es por ahora sin duda el programa mÃ¡s largo que he hecho. TambiÃ©n he tenido que cambiar al principio las variables y ponerlo todo a h y he aÃ±adido que pasaria si alguien pusiera un numero mayor al que se pide. Por la tarde he aÃ±adido la opcion de empezar el programa despues de ver la ayuda. Aun falta mucho programa, todavia hay que aÃ±adir la opcion de continuar o salir despues de elegir una accion. Por ahora el total de lineas de codigo es de 206
+//20/4/2020 AÃ±adido el borrado de texto cada vez que sea un nÃºmero erroneo al iniciar sistema
+//11/5/2020 Simplemente he aÃ±adido un texto que diga, al abrir la calculadora: volver a inicio o cerrar sesion, pero no lo he programado.
+//22/6/2020 Cronometro aÃ±adido al pulsar el 6, ahora el 7 es para cerrar sesion
+//23/6/2020 AÃ±adidas la opcione de cronometro en texto al pulsar la ayuda
+//28/6/2020 Script del planning completado, lo malo, es que no pueden haber espacios, verÃ© como lo soluciono
+//28/6/2020 He aÃ±adido el script del planning al programa, pero solo despues de la ayuda, por ahora, HAY QUE AÃ‘ADIR QUE SI SE PULSA EL 2 AL ABRIR LAS APPS SE SALGA DEL SISTEMA
 
 #include<stdio.h>
 #include<string.h>
@@ -47,7 +47,7 @@ int main() {
 	scanf("%i",&h);
 	
 	if(h == 1) {
-		printf("Aqui tienes la guia completa:\n Todo el sistema menos el nombre de usuario se controla con numeros, por lo que es mas facil de comprender. Al empezar el sistema tiene 2 opciones. 1 para la ayuda la cual esta viendo ahora o 2 para iniciar sesion, al pulsar 2, el sistema se iniciara y tendra mas opciones para elegir: 1 para ayuda\n3 para ver el tiempo segun su zona\n4 para ver el planning\n5 para abrir la calculadora\n6 para abrir el cronometro\n7 para cerrar sesion\nDentro de estas opciones habra algunas las cuales usted podra añadir eventos o cambiar informacion. Esperamos que disfrute de esta intezfaz y que no tenga ningun problema.\n");
+		printf("Aqui tienes la guia completa:\n Todo el sistema menos el nombre de usuario se controla con numeros, por lo que es mas facil de comprender. Al empezar el sistema tiene 2 opciones. 1 para la ayuda la cual esta viendo ahora o 2 para iniciar sesion, al pulsar 2, el sistema se iniciara y tendra mas opciones para elegir: 1 para ayuda\n3 para ver el tiempo segun su zona\n4 para ver el planning\n5 para abrir la calculadora\n6 para abrir el cronometro\n7 para cerrar sesion\nDentro de estas opciones habra algunas las cuales usted podra aÃ±adir eventos o cambiar informacion. Esperamos que disfrute de esta intezfaz y que no tenga ningun problema.\n");
 		
 		printf("Desea entrar al sistema ahora ? 2 si 1 no\n");
 		scanf("%i",&h);
@@ -58,14 +58,14 @@ int main() {
 		else if(h == 2) {
 			printf("\t\t\t\tEntrando al sistema...\t\n");
 			printf("\t\t\t\t------------------\t\n");
-			printf("Buenas %s, mi nombre es V.I.S.O.C.U (Virtualidad Interfacial Simplificada Orientada a la Compañia de Usuarios)\n Estoy aqui para ayudarle en lo que necesite\nComo ha podido observar, este sistema se controla por numeros. Esto es porque estoy programado en C y es mejor ser controlado por numeros que por caracteres en C.\n",log);
+			printf("Buenas %s, mi nombre es V.I.S.O.C.U (Virtualidad Interfacial Simplificada Orientada a la CompaÃ±ia de Usuarios)\n Estoy aqui para ayudarle en lo que necesite\nComo ha podido observar, este sistema se controla por numeros. Esto es porque estoy programado en C y es mejor ser controlado por numeros que por caracteres en C.\n",log);
 		
 			system("pause");
 		
 			printf("1 para ayuda\n3 para ver el tiempo segun su zona\n4 para ver el planning\n5 para abrir la calculadora\n6 para abrir el cronometro\n7 para cerrar sesion\n");
 			scanf("%i",&s);
 			if(s == 1) {
-				printf("Aqui tienes la guia completa:\n Todo el sistema menos el nombre de usuario se controla con numeros, por lo que es mas facil de comprender. Al empezar el sistema tiene 2 opciones. 1 para la ayuda la cual esta viendo ahora o 2 para iniciar sesion, al pulsar 2, el sistema se iniciara y tendra mas opciones para elegir: 1 para ayuda\n3 para ver el tiempo segun su zona\n4 para ver el planning\n5 para abrir la calculadora\n6 para abrir el cronometro\n7 para cerrar sesion\nDentro de estas opciones habra algunas las cuales usted podra añadir eventos o cambiar informacion. Esperamos que disfrute de esta intezfaz y que no tenga ningun problema.\n");
+				printf("Aqui tienes la guia completa:\n Todo el sistema menos el nombre de usuario se controla con numeros, por lo que es mas facil de comprender. Al empezar el sistema tiene 2 opciones. 1 para la ayuda la cual esta viendo ahora o 2 para iniciar sesion, al pulsar 2, el sistema se iniciara y tendra mas opciones para elegir: 1 para ayuda\n3 para ver el tiempo segun su zona\n4 para ver el planning\n5 para abrir la calculadora\n6 para abrir el cronometro\n7 para cerrar sesion\nDentro de estas opciones habra algunas las cuales usted podra aÃ±adir eventos o cambiar informacion. Esperamos que disfrute de esta intezfaz y que no tenga ningun problema.\n");
 			}
 			else if(s == 3) {
 				printf("El tiempo segun tu zona es: 27 grados y soleado\n");
@@ -178,7 +178,7 @@ else if(h > 2) {
 	else if(h == 2) {
 		printf("\t\t\t\tEntrando al sistema...\t\n");
 		printf("\t\t\t\t------------------\t\n");
-		printf("Buenas %s, mi nombre es V.I.S.O.C.U (Virtualidad Interfacial Simplificada Orientada a la Compañia de Usuarios)\n Estoy aqui para ayudarle en lo que necesite\nComo ha podido observar, este sistema se controla por numeros. Esto es porque estoy programado en C y es mejor ser controlado por numeros que por caracteres en C.\n",log);
+		printf("Buenas %s, mi nombre es V.I.S.O.C.U (Virtualidad Interfacial Simplificada Orientada a la CompaÃ±ia de Usuarios)\n Estoy aqui para ayudarle en lo que necesite\nComo ha podido observar, este sistema se controla por numeros. Esto es porque estoy programado en C y es mejor ser controlado por numeros que por caracteres en C.\n",log);
 		
 		system("pause");
 		
@@ -186,7 +186,7 @@ else if(h > 2) {
 		scanf("%i",&s);
 		
 		if(s == 1) {
-			printf("Aqui tienes la guia completa:\n Todo el sistema menos el nombre de usuario se controla con numeros, por lo que es mas facil de comprender. Al empezar el sistema tiene 2 opciones. 1 para la ayuda la cual esta viendo ahora o 2 para iniciar sesion, al pulsar 2, el sistema se iniciara y tendra mas opciones para elegir: 1 para ayuda\n3 para ver el tiempo segun su zona\n4 para ver el planning\n5 para abrir la calculadora\n6 para abrir el cronómetro\n7 para cerrar sesion\nDentro de estas opciones habra algunas las cuales usted podra añadir eventos o cambiar informacion. Esperamos que disfrute de esta intezfaz y que no tenga ningun problema.\n");
+			printf("Aqui tienes la guia completa:\n Todo el sistema menos el nombre de usuario se controla con numeros, por lo que es mas facil de comprender. Al empezar el sistema tiene 2 opciones. 1 para la ayuda la cual esta viendo ahora o 2 para iniciar sesion, al pulsar 2, el sistema se iniciara y tendra mas opciones para elegir: 1 para ayuda\n3 para ver el tiempo segun su zona\n4 para ver el planning\n5 para abrir la calculadora\n6 para abrir el cronÃ³metro\n7 para cerrar sesion\nDentro de estas opciones habra algunas las cuales usted podra aÃ±adir eventos o cambiar informacion. Esperamos que disfrute de esta intezfaz y que no tenga ningun problema.\n");
 		}
 		else if(s == 3) {
 			printf("El tiempo segun tu zona es: 27 grados y soleado\n");
